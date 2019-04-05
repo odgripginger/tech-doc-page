@@ -8,7 +8,7 @@ ol{ margin: 2vh;
     list-style-position: inside ;
 }
 
-@media (max-width: 600px){
+@media (max-width: 800px){
     #navbar{
         visibility: hidden;
     }
