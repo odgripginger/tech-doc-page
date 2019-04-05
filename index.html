@@ -1,79 +1,88 @@
 <!DOCTYPE html>
 <html lang="ENG">
-  <head>
 
-    <title>Technical Documentation Page</title>
-    <meta charset="UTF-8">
-    <link href="style.css" type="text/css" rel="stylesheet">
-    
-  </head>
+<head>
 
-  <body>
-    <nav id="navbar">
-      <header></header>
-      <ul>
-        <li><a class="nav-link" href="#What_is_Javascript?"><h4>What is Javascript?</h4></a></li>
-        <li><a class="nav-link" href="#Hello,_world!">      <h4>Hello,world!       </h4></a></li>
-        <li><a class="nav-link" href="#"><h4></h4></a></li>
-        <li><a class="nav-link" href="#"><h4></h4></a></li>
-        <li><a class="nav-link" href="#"><h4></h4></a></li>
-        <li><a class="nav-link" href="#"><h4></h4></a></li>
-        <li><a class="nav-link" href="#"><h4></h4></a></li>
-      </ul>
-    </nav>
+  <title>Technical Documentation Page</title>
+  <meta charset="UTF-8">
+  <link href="style.css" type="text/css" rel="stylesheet">
 
-    <main id="main-doc">
+</head>
 
-      <section class="main-section" id="What_is_Javascript?">
+<body>
+  <nav id="navbar">
+    <header id="navhead"> Javascript Documentation</header>
+    <ul>
+      <li> <a href="#What_is_Javascript?" class="nav-link">What is Javascript? </a></li>
+      <li> <a href="#Hello,_world!" class="nav-link">Hello, world! </a></li>
+      <li> <a href="#The_modern_mode" class="nav-link">The modern mode </a></li>
+      <li> <a href="#Variables" class="nav-link">Variables </a></li>
+      <li><a href="#Declaration_of_Variables" class="nav-link">Declaration of Variables</a></li>
+      <li id="nav-link-active"> <a href="#Variable_naming" class="nav-link">Variable naming </a></li>
+      <li> <a href="#Constants" class="nav-link">Constants </a></li>
+      <li> <a href="#Data_Types" class="nav-link">Data Types </a></li>
+      <li> <a href="#Conditional_operators" class="nav-link">Conditional operators </a></li>
+      <li> <a href="#while_and_for" class="nav-link">while and for </a></li>
+      <li> <a href="#Functions" class="nav-link">Functions </a></li>
+      <li> <a href="#Reference" class="nav-link">Reference </a></li>
+    </ul>
+  </nav>
 
-        <header>What is Javascript?</header>
+  <main id="main-doc">
 
-        <article>
-          <p>JavaScript was initially created to <q>“make web pages alive”</q>.
-            The programs in this language are called scripts. 
-            They can be written right in a web page’s HTML and executed automatically as the page loads. 
-            Scripts are provided and executed as plain text. They don’t need special preparation or compilation to run. 
-            In this aspect, JavaScript is very different from another language called Java. 
-            Today, JavaScript can execute not only in the browser, but also on the server, 
-            or actually on any device that has a special program called the JavaScript engine.
-          </p>
+    <section class="main-section" id="What_is_Javascript?">
 
-          <p>The browser has an embedded engine sometimes called a “JavaScript virtual machine”. 
-            Different engines have different “codenames”. For example:
-          </p>
+      <header>What is Javascript?</header>
 
-          <ul>
-            <li>V8 – in Chrome and Opera.</li>
-            <li>SpiderMonkey – in Firefox.</li>
-            <li>…There are other codenames like “Trident” and “Chakra” for different versions of IE, 
-              “ChakraCore” for Microsoft Edge, “Nitro” and “SquirrelFish” for Safari, etc.</li>
-          </ul>
-        </article>
-        
-      </section>
+      <article>
+        <p>JavaScript was initially created to <q>make web pages alive</q>.
+          The programs in this language are called scripts.
+          They can be written right in a web page’s HTML and executed automatically as the page loads.
+          Scripts are provided and executed as plain text. They don’t need special preparation or compilation to run.
+          In this aspect, JavaScript is very different from another language called Java.
+          Today, JavaScript can execute not only in the browser, but also on the server,
+          or actually on any device that has a special program called the JavaScript engine.
+        </p>
+
+        <p>The browser has an embedded engine sometimes called a “JavaScript virtual machine”.
+          Different engines have different “codenames”. For example:
+        </p>
+
+        <ul>
+          <li>V8 – in Chrome and Opera.</li>
+          <li>SpiderMonkey – in Firefox.</li>
+          <li>…There are other codenames like “Trident” and “Chakra” for different versions of IE,
+            “ChakraCore” for Microsoft Edge, “Nitro” and “SquirrelFish” for Safari, etc.</li>
+        </ul>
+      </article>
+
+    </section>
 
 
-      <section class="main-section" id="Hello,_world!">
+    <section class="main-section" id="Hello,_world!">
 
-        <header>Hello, world!</header>
+      <header>Hello, world!</header>
 
-        <article>
-          <p>
-            The tutorial that you’re reading is about core JavaScript, which is platform-independent. 
-            Later on, you’ll learn about Node.JS and other platforms that use it.
-          </p>
+      <article>
+        <p>
+          The tutorial that you’re reading is about core JavaScript, which is platform-independent.
+          Later on, you’ll learn about Node.JS and other platforms that use it.
+        </p>
 
-          <p>But we need a working environment to run our scripts and, since this book is online, the browser is a good choice. 
-            We’ll keep the amount of browser-specific commands (like alert) to a minimum so that you don’t spend time on them if 
-            you plan to concentrate on another environment (like Node.JS). 
-            We’ll focus on JavaScript in the browser in the next part of the tutorial.
-          </p>
+        <p>But we need a working environment to run our scripts and, since this book is online, the browser is a good
+          choice.
+          We’ll keep the amount of browser-specific commands (like alert) to a minimum so that you don’t spend time on
+          them if
+          you plan to concentrate on another environment (like Node.JS).
+          We’ll focus on JavaScript in the browser in the next part of the tutorial.
+        </p>
 
-          <p>JavaScript programs can be inserted into any part of an HTML document with the help of the <code>&lt;script&gt;</code> tag. 
-            For instance:
-          </p>
-          
-          <code>
+        <p>JavaScript programs can be inserted into any part of an HTML document with the help of the
+          <code>&lt;script&gt;</code> tag.
+          For instance:
+        </p>
+
+        <code>
             <ol>
               <li>&lt;!DOCTYPE HTML&gt;</li>
               <li>&lt;html&gt</li>
@@ -88,61 +97,492 @@
             </ol>
           </code>
 
-          <p>
-            As a rule, only the simplest scripts are put into HTML. More complex ones reside in separate files. 
-            Other pages that reference the same script will take it from the cache instead of downloading it, 
-            so the file is actually downloaded only once. That reduces traffic and makes pages faster. 
-            <br>
-              Summary:
-          </p>
+        <p>
+          As a rule, only the simplest scripts are put into HTML. More complex ones reside in separate files.
+          Other pages that reference the same script will take it from the cache instead of downloading it,
+          so the file is actually downloaded only once. That reduces traffic and makes pages faster.
+          <br>
+          Summary:
+        </p>
 
-          <ul>
-            <li>We can use a <code>&lt;script&gt;</code> tag to add JavaScript code to a page.</li>
-            <li>The <code></code.>type</code> and <code>language</code> attributes are not required.</li>
-            <li>A script in an external file can be inserted with <code>&lt;script& src="path/to/script.js"gt;&lt;/script&gt;</code>.</li>
-          </ul>
+        <ul>
+          <li>We can use a <code>&lt;script&gt;</code> tag to add JavaScript code to a page.</li>
+          <li>The <code></code.>type</code> and <code>language</code> attributes are not required.</li>
+          <li>A script in an external file can be inserted with
+            <code>&lt;script& src="path/to/script.js"gt;&lt;/script&gt;</code>.</li>
+        </ul>
 
-        </article>
-    
-      </section>
+      </article>
 
-
-      <section class="main-section">
-
-        <header>
-        </header>
-        
-      </section>
+    </section>
 
 
-      <section class="main-section">
+    <section class="main-section" id="The_modern_mode">
 
-        <header>        </header>
-        
-      </section>
+      <header>The modern mode</header>
+
+      <article>
+        <p>For a long time, JavaScript evolved without compatibility issues.
+          New features were added to the language while old functionality didn’t change.
+        </p>
+
+        <p>That had the benefit of never breaking existing code.
+          But the downside was that any mistake or an imperfect decision made by JavaScript’s creators got stuck in the
+          language forever.
+        </p>
+
+        <p>This was the case until 2009 when ECMAScript 5 (ES5) appeared.
+          It added new features to the language and modified some of the existing ones.
+          To keep the old code working, most modifications are off by default.
+          You need to explicitly enable them with a special directive: "use strict".
+        </p>
+
+        <p>The directive looks like a string: <code>"use strict"</code> or <code>'use strict'</code>.
+          When it is located at the top of a script, the whole script works the “modern” way.
+        </p>
+
+        <code>
+            <ol>
+              <li>"use strict";</li>
+              <li>// this code works the modern way</li>
+              <li>...</li>
+            </ol>
+          </code>
+
+      </article>
+
+    </section>
 
 
-      <section class="main-section">
+    <section class="main-section" id="Variables">
 
-        <header>        </header>
-        
-      </section>
+      <header>Variables</header>
+
+      <article>
+        <p>Most of the time, a JavaScript application needs to work with information. Here are two examples:</p>
+
+        <ol>
+          <li>An online shop – the information might include goods being sold and a shopping cart.</li>
+          <li>A chat application – the information might include users, messages, and much more.</li>
+        </ol>
+
+        <p>Variables are used to store this information.</p>
+
+      </article>
+
+    </section>
 
 
-      <section class="main-section">
+    <section class="main-section" id="Declaration_of_Variables">
 
-        <header>        </header>
-        
-      </section>
+      <header>Declaration of Variables</header>
 
-      <section class="main-section">
-        
-      </section>
+      <article>
+        <p>A variable is a “named storage” for data. We can use variables to store goodies, visitors, and other data.
+        </p>
 
-      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" type="text/javascript"></script>
+        <p>To create a variable in JavaScript, use the <code>let</code> keyword.</p>
 
-    </main>
+        <p>The statement below creates (in other words: declares or defines) a variable with the name “message”:</p>
 
-  </body>
+        <ol>
+          <li>let message</li>
+        </ol>
+
+        <p>Now, we can put some data into it by using the assignment operator <code>=</code>:</p>
+        <code>
+            <ol>
+                <li>let message</li>
+                <li></li>
+                <li>message = 'Hello'; // store the string</li>
+            </ol>
+          </code>
+
+        <p>The string is now saved into the memory area associated with the variable. We can access it using the
+          variable name:</p>
+        <code>
+            <ol>
+              <li>let message</li>
+              <li>message = 'Hello';</li>
+              <li></li>
+              <li>alert(message); // shows the variable content</li>
+            </ol>
+          </code>
+
+        <p>To be concise, we can combine the variable declaration and assignment into a single line:</p>
+        <code>
+            <ol>
+              <li>let message = 'Hello!'; // define the variable and assign the value</li>
+              <li></li>
+              <li>alert(message); // Hello!</li>
+            </ol>
+          </code>
+
+      </article>
+
+    </section>
+
+
+    <section class="main-section" id="Variable_naming">
+
+      <header>Variable naming</header>
+
+      <article>
+        <p>There are two limitations on variable names in JavaScript:</p>
+
+        <ol>
+          <li>The name must contain only letters, digits, or the symbols <code>$</code> and <code>_</code>.</li>
+          <li>The first character must not be a digit.</li>
+        </ol>
+
+        <p>Examples of valid names:</p>
+
+        <code>
+            <ol>
+              <li>let userName;</li>
+              <li>let test123;</li>
+            </ol>
+          </code>
+
+        <p>When the name contains multiple words, camelCase is commonly used.
+          That is: words go one after another, each word starting with a capital letter: <code>myVeryLongName</code>.
+        </p>
+
+        <p>What’s interesting – the dollar sign <code>'$'</code> and the underscore <code>'_'</code> can also be used in
+          names.
+          They are regular symbols, just like letters, without any special meaning.</p>
+      </article>
+
+    </section>
+
+    <section class="main-section" id="Constants">
+      <header>Constants</header>
+
+      <article>
+        <p>To declare a constant (unchanging) variable, use <code>const</code> instead of <code>let</code>:</p>
+
+        <code>
+            <ol>
+              <li>const myBirthday = '18.04.1982';</li>
+            </ol>
+          </code>
+
+        <p>Variables declared using <code>const</code> are called “constants”.
+          They cannot be changed. An attempt to do so would cause an error:
+        </p>
+
+        <code>
+            <ol>
+              <li>const myBirthday = '18.04.1982';</li>
+              <li></li>
+              <li>myBirthday = '01.01.2001'; // error, can't reassign the constant!</li>
+            </ol>
+          </code>
+
+        <p>When a programmer is sure that a variable will never change,
+          they can declare it with const to guarantee and clearly communicate that fact to everyone.
+        </p>
+
+        <p>There is a widespread practice to use constants as aliases for difficult-to-remember values that are known
+          prior to execution.</p>
+
+        <p>Such constants are named using capital letters and underscores.</p>
+
+        <p>Like this:</p>
+
+        <code>
+            <ol>
+              <li>const COLOR_RED = "#F00";</li>
+              <li>const COLOR_GREEN = "#0F0";</li>
+              <li>const COLOR_BLUE = "#00F";</li>
+              <li>const COLOR_ORANGE = "#FF7F00";</li>
+              <li></li>
+              <li>// ...when we need to pick a color</li>
+              <li>et color = COLOR_ORANGE;</li>
+              <li>alert(color); // #FF7F00</li>
+            </ol>
+          </code>
+
+        <p>Benefits:</p>
+
+        <ul>
+          <li>COLOR_ORANGE is much easier to remember than "#FF7F00".</li>
+          <li>It is much easier to mistype "#FF7F00" than COLOR_ORANGE.</li>
+          <li>When reading the code, COLOR_ORANGE is much more meaningful than #FF7F00.</li>
+        </ul>
+
+        <p>When should we use capitals for a constant and when should we name it normally? Let’s make that clear.</p>
+
+        <p>Being a “constant” just means that a variable’s value never changes.
+          But there are constants that are known prior to execution (like a hexadecimal value for red) and there are
+          constants that are calculated in run-time,
+          during the execution, but do not change after their initial assignment.
+        </p>
+
+        <p>For instance:</p>
+
+        <code>
+            <ol>
+              <li>const pageLoadTime = /* time taken by a webpage to load */;</li>
+            </ol>
+          </code>
+
+        <p>The value of <code>pageLoadTime</code> is not known prior to the page load, so it’s named normally.
+          But it’s still a constant because it doesn’t change after assignment.
+        </p>
+
+        <p>In other words, capital-named constants are only used as aliases for “hard-coded” values.</p>
+      </article>
+
+    </section>
+
+    <section class="main-section" id="Data_Types">
+      <header>Data Types</header>
+
+      <article>
+        <p>A variable in JavaScript can contain any data. A variable can at one moment be a string and at another be a
+          number:</p>
+
+        <code>
+            <ol>
+              <li>// no error</li>
+              <li>let message = "hello";</li>
+              <li>message = 123456;</li>
+            </ol>
+          </code>
+
+        <p>Programming languages that allow such things are called “dynamically typed”, meaning that there are data
+          types,
+          but variables are not bound to any of them.
+        </p>
+
+        <p>There are seven basic data types in JavaScript. Here, we’ll cover them in general and in the next chapters
+          we’ll talk about each of them in detail.
+        </p>
+
+        <p>The <i>number</i> type represents both integer and floating point numbers.</p>
+
+        <code>
+            <ol>
+              <li>let n = 123;</li>
+              <li>n = 12.345;</li>
+            </ol>
+          </code>
+
+        <p>There are many operations for numbers, e.g. multiplication <code>*</code>, division <code>/</code>, addition
+          <code>+</code>, subtraction <code>-</code>, and so on.</p>
+
+        <p>Besides regular numbers, there are so-called “special numeric values” which also belong to this data type:
+          <code>Infinity</code>, <code>-Infinity</code> and <code>NaN</code>.
+        </p>
+
+        <p>A <i>string</i> in JavaScript must be surrounded by quotes.</p>
+
+        <code>
+            <ol>
+              <li>let str = "Hello";</li>
+              <li>let str2 = 'Single quotes are ok too';</li>
+              <li>let phrase = `can embed ${str}`;</li>
+            </ol>
+          </code>
+
+        <p>In JavaScript, there are 3 types of quotes.</p>
+
+        <ol>
+          <li>Double quotes: <code>"Hello"</code>.</li>
+          <li>Single quotes: <code>'Hello'</code>.</li>
+          <li>Backticks: <code>`Hello`</code>. </li>
+        </ol>
+
+        <p>The boolean type has only two values: <code>true</code> and <code>false</code>.
+          This type is commonly used to store yes/no values: <code>true</code> means “yes, correct”, and
+          <code>false</code> means “no, incorrect”.
+        </p>
+
+        <p>The <code>object</code> type is special.</p>
+
+        <p>All other types are called “primitive” because their values can contain only a single thing (be it a string
+          or a number or whatever).
+          In contrast, objects are used to store collections of data and more complex entities.
+          We’ll deal with them later in the chapter Objects after we learn more about primitives.
+        </p>
+
+        <p>The <code>symbol</code> type is used to create unique identifiers for objects.
+          We have to mention it here for completeness, but it’s better to study this type after objects.
+        </p>
+      </article>
+    </section>
+
+    <section class="main-section" id="Conditional_operators">
+      <header>Conditional operators</header>
+
+      <article>
+        <p>Sometimes, we need to perform different actions based on different conditions.</p>
+
+        <p>To do that, we use the <code>if</code> statement and the conditional (ternary)
+          operator which we will be referring to as the “question mark” operator <code>?</code> for simplicity.
+        </p>
+
+        <p>The if statement evaluates a condition and, if the condition’s result is true, executes a block of code.</p>
+
+        <code>
+            <ol>
+              <li>let year = prompt('In which year was ECMAScript-2015 specification published?', '');</li>
+              <li></li>
+              <li>if (year == 2015) alert( 'You are right!' );</li>
+            </ol>
+          </code>
+
+        <p>If we want to execute more than one statement, we have to wrap our code block inside curly braces:</p>
+
+        <code>
+            <ol>
+              <li>if (year == 2015) {</li>
+              <li>alert( "That's correct!" );</li>
+              <li>alert( "You're so smart!" );</li>
+              <li>}</li>
+            </ol>
+          </code>
+
+        <p>We recommend wrapping your code block with curly braces <code>{}</code> every time you use an if statement,
+          even if there is only one statement to execute. Doing so improves readability.
+        </p>
+
+        <p>The <code>if</code> statement may contain an optional “else” block. It executes when the condition is false.
+        </p>
+
+        <p>For example:</p>
+
+        <code>
+              <ol>
+                <li>let year = prompt('In which year was the ECMAScript-2015 specification published?', '');</li>
+                <li></li>
+                <li>if (year == 2015) {</li>
+                <li>  alert( 'You guessed it right!' );</li>
+                <li>} else {</li>
+                <li>alert( 'How can you be so wrong?' ); // any value except 2015</li>
+                <li>}</li>
+              </ol>
+          </code>
+
+        <p>The operator is represented by a question mark ?.
+          The formal term “ternary” means that the operator has three operands.
+          It is actually the one and only operator in JavaScript which has that many.
+        </p>
+
+        <p>Syntax is:</p>
+
+        <code>
+              <ol>
+                <li>let result = condition ? value1 : value2;</li>
+              </ol>
+          </code>
+
+      </article>
+
+    </section>
+
+    <section class="main-section" id="while_and_for">
+      <header>while and for</header>
+
+      <article>
+        <p>We often need to repeat actions.</p>
+
+        <p>For example, outputting goods from a list one after another or just running the same code for each number
+          from 1 to 10.</p>
+
+        <p><i>Loops</i> are a way to repeat the same code multiple times.</p>
+
+        <p>The <code>while</code> loop has the following syntax:</p>
+
+        <code>
+              <ol>
+                <li>while (condition) {</li>
+                <li> // code</li>
+                <li>  // so-called "loop body"</li>
+                <li>}</li>
+              </ol>
+          </code>
+
+        <p>While the condition is <code>true</code>, the <code>code</code> from the loop body is executed.</p>
+
+        <p>For instance, the loop below outputs <code>i</code> while <code>i &lt 3</code>:</p>
+
+        <code>
+            <ol>
+              <li>let i = 0;</li>
+              <li>while (i &lt 3) { // shows 0, then 1, then 2</li>
+              <li>alert( i );</li>
+              <li>i++;</li>
+              <li>}</li>
+            </ol>
+          </code>
+
+        <p>The <code>for</code> loop is the most commonly used loop.</p>
+
+        <p>It looks like this:</p>
+
+        <code>
+            <ol>
+              <li>for (begin; condition; step) {</li>
+              <li></li>
+              <li>  // ... loop body ...</li>
+              <li>}</li>
+            </ol>
+          </code>
+
+      </article>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+
+      <article>
+        <p>A function definition (also called a function declaration, or function statement) consists of the function
+          keyword, followed by:</p>
+
+        <p>For example, we need to show a nice-looking message when a visitor logs in, logs out and maybe somewhere
+          else.</p>
+
+        <p>We’ve already seen examples of built-in functions,
+          like <code>alert(message)</code>, <code>prompt(message, default)</code> and <code>confirm(question)</code>.
+          But we can create functions of our own as well.
+        </p>
+
+        <p>To create a function we can use a <i>function declaration</i>.</p>
+
+        <p>It looks like this:</p>
+
+        <code>
+            <ol>
+              <li>function showMessage() {</li>
+              <li>alert( 'Hello everyone!' );</li>
+              <li>}</li>
+            </ol>
+          </code>
+
+        <p>The <code>function</code> keyword goes first, then goes the name of the function,
+          then a list of parameters between the parentheses (empty in the example above) and finally the code of the
+          function,
+          also named “the function body”, between curly braces.
+        </p>
+      </article>
+    </section>
+
+    <section class="main-section" id="Reference">
+      <header>Reference</header>
+      <article>
+        <ul>
+          <li>All the documentation on this page is taken from <a href="https://javascript.info"
+              target="_blank">javascript.info</a>.</li>
+        </ul>
+      </article>
+    </section>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" type="text/javascript"></script>
+
+  </main>
+
+</body>
 
 </html>
