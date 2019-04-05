@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ENG">
+  <head>
+
+    <title>Technical Documentation Page</title>
+    <meta charset="UTF-8">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header></header>
+      <ul>
+        <li><a class="nav-link" href="#What_is_Javascript?"><h4>What is Javascript?</h4></a></li>
+        <li><a class="nav-link" href="#Hello,_world!">      <h4>Hello,world!       </h4></a></li>
+        <li><a class="nav-link" href="#"><h4></h4></a></li>
+        <li><a class="nav-link" href="#"><h4></h4></a></li>
+        <li><a class="nav-link" href="#"><h4></h4></a></li>
+        <li><a class="nav-link" href="#"><h4></h4></a></li>
+        <li><a class="nav-link" href="#"><h4></h4></a></li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+
+      <section class="main-section" id="What_is_Javascript?">
+
+        <header>What is Javascript?</header>
+
+        <article>
+          <p>JavaScript was initially created to <q>“make web pages alive”</q>.
+            The programs in this language are called scripts. 
+            They can be written right in a web page’s HTML and executed automatically as the page loads. 
+            Scripts are provided and executed as plain text. They don’t need special preparation or compilation to run. 
+            In this aspect, JavaScript is very different from another language called Java. 
+            Today, JavaScript can execute not only in the browser, but also on the server, 
+            or actually on any device that has a special program called the JavaScript engine.
+          </p>
+
+          <p>The browser has an embedded engine sometimes called a “JavaScript virtual machine”. 
+            Different engines have different “codenames”. For example:
+          </p>
+
+          <ul>
+            <li>V8 – in Chrome and Opera.</li>
+            <li>SpiderMonkey – in Firefox.</li>
+            <li>…There are other codenames like “Trident” and “Chakra” for different versions of IE, 
+              “ChakraCore” for Microsoft Edge, “Nitro” and “SquirrelFish” for Safari, etc.</li>
+          </ul>
+        </article>
+        
+      </section>
+
+
+      <section class="main-section" id="Hello,_world!">
+
+        <header>Hello, world!</header>
+
+        <article>
+          <p>
+            The tutorial that you’re reading is about core JavaScript, which is platform-independent. 
+            Later on, you’ll learn about Node.JS and other platforms that use it.
+          </p>
+
+          <p>But we need a working environment to run our scripts and, since this book is online, the browser is a good choice. 
+            We’ll keep the amount of browser-specific commands (like alert) to a minimum so that you don’t spend time on them if 
+            you plan to concentrate on another environment (like Node.JS). 
+            We’ll focus on JavaScript in the browser in the next part of the tutorial.
+          </p>
+
+          <p>JavaScript programs can be inserted into any part of an HTML document with the help of the <code>&lt;script&gt;</code> tag. 
+            For instance:
+          </p>
+          
+          <code>
+            <ol>
+              <li>&lt;!DOCTYPE HTML&gt;</li>
+              <li>&lt;html&gt</li>
+              <li></li>
+              <li>&lt;p&gt;Before the script...&lt;/p&gt;</li>
+              <li></li>
+              <li>&lt;script&gt;</li>
+              <li>alert( 'Hello, world!' );</li>
+              <li>&lt;/script&gt;</li>
+              <li></li>
+              <li>&lt;p&gt;After the script...&lt;/p&gt;</li>
+            </ol>
+          </code>
+
+          <p>
+            As a rule, only the simplest scripts are put into HTML. More complex ones reside in separate files. 
+            Other pages that reference the same script will take it from the cache instead of downloading it, 
+            so the file is actually downloaded only once. That reduces traffic and makes pages faster. 
+            <br>
+              Summary:
+          </p>
+
+          <ul>
+            <li>We can use a <code>&lt;script&gt;</code> tag to add JavaScript code to a page.</li>
+            <li>The <code></code.>type</code> and <code>language</code> attributes are not required.</li>
+            <li>A script in an external file can be inserted with <code>&lt;script& src="path/to/script.js"gt;&lt;/script&gt;</code>.</li>
+          </ul>
+
+        </article>
+    
+      </section>
+
+
+      <section class="main-section">
+
+        <header>
+        </header>
+        
+      </section>
+
+
+      <section class="main-section">
+
+        <header>        </header>
+        
+      </section>
+
+
+      <section class="main-section">
+
+        <header>        </header>
+        
+      </section>
+
+
+      <section class="main-section">
+
+        <header>        </header>
+        
+      </section>
+
+      <section class="main-section">
+        
+      </section>
+
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" type="text/javascript"></script>
+
+    </main>
+
+  </body>
+
+</html>
